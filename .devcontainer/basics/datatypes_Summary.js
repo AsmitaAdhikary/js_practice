@@ -1,3 +1,5 @@
+/*
+
 //primitive --->call by value
 
 //1.string 2.Number 3.Boolean 4.Null (empty String)
@@ -48,3 +50,30 @@ console.log(typeof (myObj))  //object
 console.log(typeof (value)) //datatype of null is object.
 console.log(typeof (b))  //Symbol
 console.log(typeof (myFunction))
+
+*/
+
+//Memory
+//Stack Memory ->Primitive DataTypes (values are copied in Stack Memory)
+//Heap Memory-> Non Primitive DataTypes(Reference created)
+
+//Stack Memory
+let name ="asmita"
+let changeName=name;
+changeName="Rini"
+console.log(changeName)
+console.log(name); //value of name not changed
+
+//Heap Memory
+let u1={
+    email:"asmita@gmail.com",
+    userId:"user@123"
+}
+let u2=u1
+u2.email="Rini@gmail.com"
+
+console.log(u2.email);
+console.log(u1.email);
+
+
+
